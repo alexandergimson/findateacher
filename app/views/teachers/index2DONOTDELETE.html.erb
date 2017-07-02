@@ -1,0 +1,17 @@
+<br><br><br><br>
+<div class="finder">
+  <div class="container">
+    <%= link_to "Create a teaching profile", new_teacher_path %>
+
+<%= form_tag search_teachers_path, method: :get do |f| %>
+<%= text_field_tag :search, nil, placeholder: "Piano, drums, guitar" %>
+<%= text_field_tag :location, nil, placeholder: "London, Manchester" %>
+<%= select_tag :category, options_for_select(Category.all.map { |c| [c.name, c.id]}) %>
+<%= submit_tag 'Search' %>
+<% end %>
+  </div>
+</div>
+
+<%= render 'layouts/latestteachers' %><br><br>
+
+<%= render 'layouts/latestteacherreviews' %>

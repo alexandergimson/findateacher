@@ -1,0 +1,28 @@
+Name: <%= @teacher.name %><br>
+<% if current_user.try(:admin?) %>
+<button><%= link_to "Edit", edit_teacher_path %></button>
+<button><%= link_to "Delete", teacher_path, method: :delete, data: {confirm: "Are you sure you want to delete? This can't be undone!"} %></button>
+<% else %>
+<% end %>
+Instrument: <%= @teacher.category.name %> <br>
+Average rating: <%= @avg_rating %>
+
+<% if @teacher.image_url.present? %>
+<%= image_tag(@teacher.image) %>
+<% else %>
+<%= image_tag("http://placehold.it/370x210") %>
+<% end %>
+
+
+<h2>Reviews</h2>
+<% if @reviews.blank? %>
+  <p>No reviews yet!</P>
+<%= link_to "Write a review", new_teacher_review_path(@teacher) %> <br>
+    <% else %>
+<%= @reviews.each do |review| %>
+<%= "#{review.user.first_name}" %>
+  <%= review.comment %>
+<% end %>
+<% end %>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19858.641693687678!2d<%= @teacher.longitude %>!3d<%= @teacher.latitude %>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1498640411600" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>

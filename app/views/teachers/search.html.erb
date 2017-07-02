@@ -1,0 +1,12 @@
+<% if @teachers.blank? %>
+  <h3>Couldn't find a teacher with your search criteria</h3>
+    <% else %>
+      <% @teachers.each do |teacher| %>
+<% if teacher.image_url.present? %>
+  <%= link_to image_tag(teacher.image_url.to_s), teacher %>
+<%else %>
+  <%= link_to image_tag("http://placehold.it/370x210"), teacher %>
+<% end %>
+<%= link_to teacher.name, teacher %>
+<% end %>
+<% end %>

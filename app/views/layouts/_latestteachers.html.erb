@@ -1,0 +1,8 @@
+<% @teachers.last(3).each do |teacher | %>
+  <% if teacher.image_url.present? %>
+    <%= link_to image_tag(teacher.image_url.to_s, height: 100, width: 100), teacher %>
+  <%else %>
+    <%= link_to image_tag("http://placehold.it/370x210", height: 100, width: 100), teacher %>
+  <% end %>
+    <%= link_to teacher.name, teacher  %>
+<% end %>
