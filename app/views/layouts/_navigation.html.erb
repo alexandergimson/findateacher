@@ -1,20 +1,18 @@
 <nav class="fixed-nav-bar">
-  <div id="menu" class="menu">
-    <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
-    <ul class="menu-items">
+  <div class="container">
+    <ul class="nav-elements left">
         <li><a href="/">Home</a></li>
         <li><%= link_to "About Us", about_us_path %></li>
-        <li><%= link_to "Contact Us", contact_us_path %></li>
         <li><%= link_to "Blog", contact_us_path %></li>
     </ul>
-    <ul class="menu-float-right">
+    <ul class="auth-elements right">
       <% if user_signed_in? %>
         <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
         <li><%= link_to "Edit profile", edit_user_registration_path %></li>
       <% else %>
+        <li class="signup"><%= link_to "Sign up", new_user_registration_path %></li>
         <li><%= link_to "Sign in", new_user_session_path %></li>
-        <li><%= link_to "Sign up", new_user_registration_path %></li>
       <% end %>
-    </ul>
+      </ul>
   </div>
 </nav>

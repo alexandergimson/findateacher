@@ -3,93 +3,84 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
   width: 100%;
   height: 70px;
   background-color: #fec662;
 }
 
-/* Example responsive navigation menu  */
-.fixed-nav-bar li, .fixed-nav-bar a {
-  height: 50px;
-  line-height: 50px;
+.container {
+  line-height: 2em;
+  width: 960px;
+  height: 36px;
+  margin: 0 auto;
+  background-color: goldenrod;
+  vertical-align: text-bottom;
+  margin-top: 20px;
 }
 
-.menu {
-  width: 90%;
-  max-width: 960px;
-  margin: 0 auto;
+.nav-elements {
+  width: 50%;
+  display: inline-block;
+}
+
+.nav-elements li {
+  float: left;
+
+}
+
+.auth-elements li {
   float: right;
 }
 
-.menu a, .menu a:visited {
-  color: #000000;
+.left {
+  float: left;
 }
 
-.menu a:hover, .menu a:target {
-  color: #ebebeb;
+.right {
+  float: right;
 }
 
-.menu-items {
-  display: inline-block;
-}
-
-.menu-items li {
-  display: inline-block;
-  margin-right: 20px;
-  margin-left: 20px;
-  float:left;
-}
-
-.menu-items a {
-  text-decoration: none;
+ul {
+  list-style: none;
 }
 
 .menu-float-right {
+  width: 40%;
   display: inline-block;
-  float:right;
 }
 
-.menu-float-right li {
-  display: inline-block;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-.menu-float-right a {
+ul li a {
+  color: black;
+  padding: 20px;
   text-decoration: none;
+  position: relative;
+  letter-spacing: -0.5px;
 }
 
-.show, .hide {
-  display: none;
-  padding-left: 15px;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center left;
-  color: #dde1e2;
+ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
-.show {
-  background-image: url(assets/down-arrow-icon.png);
+ul li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
-.hide {
-  background-image: url(assets/up-arrow-icon.png);
+.signup {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 6px;
+  border: 2px solid #000;
 }
-
-@media only screen and (max-width: 800px) {
-  .menu {
-    position: relative;
-    width: 100%;
-  }
-
-  .menu-items {
-    display: none;
-    width: 100%;
-    margin-top: 50px;
-    background-color: #008378;
-  }
-  .menu-items li {
-    display: block;
-    text-align: center;
-  }

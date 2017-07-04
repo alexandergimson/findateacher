@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import 'css-reset.css'
+
+body{
+  font-family: lato, sans-serif;
+}
