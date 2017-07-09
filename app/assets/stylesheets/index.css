@@ -1,23 +1,137 @@
-.search-container {
-  position: fixed;
-  top: 100;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 70px;
+.finder {
+  margin-top: 70px;
+  background-repeat: repeat-y
 }
 
-.input-group {
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.search-container {
+  line-height: 2em;
   width: 960px;
-  background-color: red;
+  height: 36px;
+  vertical-align: text-bottom;
+  margin-top: 50px;
+  display: inline
+}
+
+#rectangle-left {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  width:45px;
+  height:47px;
+  position: absolute;
+  left: 178px;
+  margin: 0px;
+  text-align: center;
+  font-weight: bold;
+  vertical-align: middle;
+  background-color: white;
+}
+
+#rectangle-right {
+  width:45px;
+  height:47px;
+  position: absolute;
+  left: 588px;
+  text-align: center;
+  font-weight: bold;
+  background-color: white;
+  border: 100px;
+}
+
+span{
+  vertical-align: bottom;
+  line-height: normal;
+}
+
+.search-elements {
+  padding-left: 20px;
+  height: 10em;
 }
 
 .search-left {
-  width: 450px;
-  height: 15px;
+  border: 0px;
+  position: absolute;
+  left:220px;
+  width: 366px;
+  height: 45px;
+  margin: 0px;
+  outline: 0px;
 }
 
 .search-right {
-  width: 450px;
-  height: 15px;
+  border: 0px;
+  position: absolute;
+  left:633px;
+  width: 365px;
+  height: 45px;
+  margin:0px;
+  outline: 0px;
+}
+
+.button {
+  border: 0px;
+  background-color: #fec662;
+  position: absolute;
+  left:1000px;
+  font: inherit;
+  height: 47px;
+  width: 90.77px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.button:hover{
+  background-color: black;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.button.value:hover{
+  color: #fff;
+}
+
+.button:hover {
+  color: #fec662;
+}
+.icon-list{
+  position: absolute;
+  top: 375px;
+  left: 420px;
+}
+
+.homepage-category{
+  padding: 0 12px;
+  display: inline;
+  margin-top: 50px;
+}
+
+.homepage-category a{
+  color: white;
+  text-decoration: none;
+  position: relative;
+  letter-spacing: -0.5px;
+}
+
+.homepage-category a:hover{
+  text-decoration: underline;
+}
+
+.icon{
+  width: 18px;
+  height: 18px;
+}
+
+::placeholder{
+  font-size: 15px;
+}
+
+.search-left::placeholder{
+  border-width: 2px;
+  line-height: 30px;
+  border-right-style: solid;
+  border-color: #c3bfbf
 }

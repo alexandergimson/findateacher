@@ -15,8 +15,8 @@ class Teacher < ActiveRecord::Base
   end
 
   def self.search(params)
-    teachers = Teacher.where(category_id: params[:category].to_i)
-    teachers = teachers.where("name like ? or description like ?", "%#{params[:search]}%", "%#{params[:search]}%") if params[:search].present?
+  # teachers = Teacher.where(category_id: params[:category].to_i)
+    teachers = Teacher.where("name like ? or description like ?", "%#{params[:search]}%", "%#{params[:search]}%") if params[:search].present?
     teachers = teachers.near(params[:location], 20) if params[:location].present?
     teachers
   end

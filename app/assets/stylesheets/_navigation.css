@@ -13,7 +13,6 @@
   width: 960px;
   height: 36px;
   margin: 0 auto;
-  background-color: goldenrod;
   vertical-align: text-bottom;
   margin-top: 20px;
 }
@@ -49,7 +48,7 @@ ul {
   display: inline-block;
 }
 
-ul li a {
+.container ul li a {
   color: black;
   padding: 20px;
   text-decoration: none;
@@ -57,7 +56,7 @@ ul li a {
   letter-spacing: -0.5px;
 }
 
-ul li a:before {
+.container ul li a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -72,15 +71,30 @@ ul li a:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-ul li a:hover:before {
+.container ul li a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
 .signup {
-  background: transparent;
+  background: #fec662;
   box-shadow: none;
   border-radius: 6px;
   border: 2px solid #000;
+  top: 2px;
+}
+
+.signup:hover{
+  background-color: black;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.signup a {
+  bottom:1px;
+}
+
+.signup a:hover{
+  color: #fec662;
 }

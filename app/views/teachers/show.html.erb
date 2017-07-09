@@ -4,8 +4,8 @@ Name: <%= @teacher.name %><br>
 <button><%= link_to "Delete", teacher_path, method: :delete, data: {confirm: "Are you sure you want to delete? This can't be undone!"} %></button>
 <% else %>
 <% end %>
-Instrument: <%= @teacher.category.name %> <br>
-Average rating: <%= @avg_rating %>
+Average rating: <%= @avg_rating %> <br>
+Instrument: <%= @teacher.description %>
 
 <% if @teacher.image_url.present? %>
 <%= image_tag(@teacher.image) %>
