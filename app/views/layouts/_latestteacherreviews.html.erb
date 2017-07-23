@@ -1,3 +1,5 @@
+<h3>Latest Reviews</h3>
+
 <% @teachers.last(5).each do | teacher | %>
   <% if teacher.reviews.present? %>
     <%= teacher.reviews.average(:rating).round(2) %>

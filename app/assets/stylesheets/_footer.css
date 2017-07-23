@@ -1,0 +1,27 @@
+.footer-container {
+  clear:both;
+  bottom:0px;
+  width:100%;
+  background:#fec662;
+}
+
+.footer-links {
+  padding-top: 10px;
+  width: 65%;
+  margin-left:220px;
+}
+
+.column-left{
+  text-align: left;
+  float: left;
+}
+
+.column-right{
+  text-align: right;
+  float: right;
+}
+
+.column-center{
+  text-align: center;
+  float: center;
+}

@@ -9,6 +9,8 @@
 
   <body>
     <%= render 'layouts/navigation' %>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
 
     <% flash.each do |key, value| %>
       <div class="alert alert-<%= key %>">
@@ -18,19 +20,17 @@
               <%= value %>
             </li>
           </ul>
-        </div>
+      </div>
       <% end %>
 
-    <%= yield %>
-<script>
-  $('.stay-rating').raty({
-    path: '/assets',
-    readOnly: true,
-    score: function () {
-      return $(this).attr('data-score');
-    }
-  });
-  </script>
+      <script>
+        $('.stay-rating').raty({
+          path: '/assets',
+          readOnly: true,
+          score: function () {
+            return $(this).attr('data-score');
+          }
+        });
+      </script>
   </body>
-
 </html>

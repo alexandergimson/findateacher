@@ -1,8 +1,16 @@
-<% @teachers.last(3).each do |teacher | %>
-  <% if teacher.image_url.present? %>
-    <%= link_to image_tag(teacher.image_url.to_s, height: 100, width: 100), teacher %>
-  <%else %>
-    <%= link_to image_tag("http://placehold.it/370x210", height: 100, width: 100), teacher %>
-  <% end %>
-    <%= link_to teacher.name, teacher  %>
-<% end %>
+  <h3 id="teacher-header">Latest Teachers</h3>
+
+    <% @teachers.last(3).each do |teacher | %>
+      <div class="teacher-profile">
+        <img class="teacher-image"><% if teacher.image_url.present? %>
+          <%= link_to image_tag(teacher.image_url.to_s, height: 200, width: 200), teacher %>
+          <%else %>
+          <%= link_to image_tag("http://placehold.it/370x210", height: 200, width: 200), teacher %>
+          <% end %>
+        </img>
+        <hr/>
+          <h3 class="teacher-name">Name:<%= link_to teacher.name, teacher  %></h3>
+          <p class="instrument-text">Instrument:<%= link_to teacher.description, teacher %></p>
+          <p class="instrument-text">Location:<%= link_to teacher.postcode, teacher %></p>
+      </div>
+    <% end %>

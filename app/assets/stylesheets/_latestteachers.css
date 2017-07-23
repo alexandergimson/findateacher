@@ -1,0 +1,37 @@
+#teacher-header{
+  font-size: 40px;
+  text-align:center;
+  font-weight: bold;
+}
+
+.teacher-image{
+  float: center;
+}
+
+.teacher-profile{
+  border: solid 0.5px black;
+  float: left;
+  width: 220px;
+  margin-top: 50px;
+  margin-left: 150px;
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.teacher-name{
+  padding-bottom: 4px;
+  text-align: center;
+}
+
+.instrument-text{
+  padding-bottom: 1px;
+  text-align: center;
+}
+
+hr{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}

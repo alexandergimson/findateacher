@@ -1,11 +1,21 @@
 .finder {
-  margin-top: 70px;
-  background-repeat: repeat-y
+  background-image: url("/assets/blue-music-background.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
 }
 
 .logo {
   display: block;
   margin: 0 auto;
+  padding-top: 100px;
+}
+
+.header{
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  padding-top: 60px;
+  padding-bottom: 15px;
 }
 
 .search-container {
@@ -13,7 +23,7 @@
   width: 960px;
   height: 36px;
   vertical-align: text-bottom;
-  margin-top: 50px;
+  margin-top: 80px;
   display: inline
 }
 
@@ -38,7 +48,7 @@
   left: 588px;
   text-align: center;
   font-weight: bold;
-  background-color: white;
+  background-color: #ffffff;
   border: 100px;
 }
 
@@ -54,27 +64,27 @@ span{
 
 .search-left {
   border: 0px;
-  position: absolute;
   left:220px;
   width: 366px;
   height: 45px;
   margin: 0px;
   outline: 0px;
+  position: absolute;
 }
 
 .search-right {
   border: 0px;
-  position: absolute;
   left:633px;
   width: 365px;
   height: 45px;
   margin:0px;
   outline: 0px;
+  position: absolute;
 }
 
 .button {
   border: 0px;
-  background-color: #fec662;
+  background-color: #AC1B26;
   position: absolute;
   left:1000px;
   font: inherit;
@@ -82,25 +92,28 @@ span{
   width: 90.77px;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
+  color: white;
 }
 
 .button:hover{
-  background-color: black;
+  background-color: #000000;
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 
 .button.value:hover{
-  color: #fff;
+  color: #ffffff;
 }
 
 .button:hover {
-  color: #fec662;
+  color: #ffffff;
 }
+
 .icon-list{
   position: absolute;
-  top: 375px;
+  top: 385px;
   left: 420px;
+  padding-top: 1px;
 }
 
 .homepage-category{
@@ -134,4 +147,9 @@ span{
   line-height: 30px;
   border-right-style: solid;
   border-color: #c3bfbf
+}
+
+.line {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
