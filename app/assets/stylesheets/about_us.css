@@ -1,0 +1,26 @@
+.ab-finder {
+  background-image: url("/assets/blue-guitar-background.png");
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+.header {
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  padding-top: 60px;
+  padding-bottom: 15px;
+}
+
+.sub-header {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.ab-paragraph {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 40px;
+}

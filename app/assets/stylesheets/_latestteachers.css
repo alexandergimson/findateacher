@@ -1,4 +1,5 @@
 #teacher-header{
+  margin-top: 50px;
   font-size: 40px;
   text-align:center;
   font-weight: bold;
@@ -12,12 +13,12 @@
   border: solid 0.5px black;
   float: left;
   width: 220px;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-left: 150px;
   padding-top: 4px;
   padding-left: 10px;
   padding-bottom: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 80px;
 }
 
 .teacher-name{

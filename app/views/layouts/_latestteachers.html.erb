@@ -1,5 +1,4 @@
   <h3 id="teacher-header">Latest Teachers</h3>
-
     <% @teachers.last(3).each do |teacher | %>
       <div class="teacher-profile">
         <img class="teacher-image"><% if teacher.image_url.present? %>

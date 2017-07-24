@@ -1,0 +1,123 @@
+.signup-background {
+  background-image: url("/assets/blue-guitar-background.png");
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+.user {
+  align: center;
+  width: 100%;
+  margin-left: 0px;
+  padding-top: 100px;
+}
+
+.left-container {
+  margin-left: 200px;
+  float:left;
+}
+
+.right-container {
+  margin-right: 200px;
+  float: right;
+}
+
+.signup-header {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.welcome-ttt {
+  margin-top: 25px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.form {
+  width: 370px;
+  margin-top: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  opacity: 1;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.form__input {
+  border: 0px;
+  margin: 0px;
+  width: 100%;
+  padding: 20px;
+  outline: 0;
+}
+
+.form__input::placeholder {
+}
+
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  outline: 0;
+  border: 0;
+  color: white;
+  transition: 0.3s;
+  font-size: 20px
+}
+
+.btn:hover {
+  background-color: #AC1B26;
+}
+
+
+  @keyframes NO {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes arrive {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 500px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0
+    }
+
+    50% {
+        background-position: 100% 0
+    }
+
+    100% {
+        background-position: 0 0
+    }
+}
+
+.ali-text {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
