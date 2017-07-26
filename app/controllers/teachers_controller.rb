@@ -56,7 +56,7 @@ class TeachersController < ApplicationController
 
   private
     def teacher_params
-      params.require(:teacher).permit(:name, :postcode, :description, :category_id, :image)
+      params.require(:teacher).permit(:name, :postcode, :description, :city, :image)
     end
 
     def is_admin?

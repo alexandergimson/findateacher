@@ -1,4 +1,5 @@
   <h3 id="teacher-header">Latest Teachers</h3>
+  <div id="center-container">
     <% @teachers.last(3).each do |teacher | %>
       <div class="teacher-profile">
         <img class="teacher-image"><% if teacher.image_url.present? %>
@@ -13,3 +14,4 @@
           <p class="instrument-text">Location:<%= link_to teacher.postcode, teacher %></p>
       </div>
     <% end %>
+</div>

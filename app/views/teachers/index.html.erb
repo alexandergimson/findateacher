@@ -1,23 +1,30 @@
 <div class="finder">
   <img class="logo" src="/assets/TF-logo.png" style="width:152px;height:114px;">
-  <div class="search-container">
     <h1 class="header">Find a teacher. Fast.</h1>
-    <div id="rectangle-left">
+
+
+
+
+  <div class="search-container">
+    <div id="rectangle-find">
       <span>Find</span>
     </div>
-    <div id="rectangle-right">
+    <div id="rectangle-near">
       <span>Near</span>
     </div>
     <div class="search-elements">
       <%= form_tag search_teachers_path, method: :get do |f| %>
       <%= text_field_tag :search, nil, placeholder: "Instrument: Piano, Bass, Guitar", class: "search-left" %>
       <%= text_field_tag :location, nil, placeholder: "Location: London, Manchester", class: "search-right" %>
-  <%# <%= select_tag :category, options_for_select(Category.all.map { |c| [c.name, c.id]}) %>
+      <%#<%= select_tag :category, options_for_select(Category.all.map { |c| [c.name, c.id]}) %>
       <%= submit_tag 'Search', {class: "button"} %>
       <% end %>
     </div>
   </div>
 </div>
+
+
+
 
 <div class="link-list">
   <ul class="icon-list">

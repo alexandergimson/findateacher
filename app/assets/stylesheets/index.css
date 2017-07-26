@@ -10,7 +10,7 @@
   padding-top: 100px;
 }
 
-.header{
+.header {
   color: white;
   text-align: center;
   font-size: 45px;
@@ -19,37 +19,30 @@
 }
 
 .search-container {
-  line-height: 2em;
-  width: 960px;
-  height: 36px;
-  vertical-align: text-bottom;
-  margin-top: 80px;
-  display: inline
+  display: table;
+  margin: 0px auto;
+  margin-bottom: 40px;
 }
 
-#rectangle-left {
+#rectangle-find {
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   width:45px;
   height:47px;
-  position: absolute;
-  left: 178px;
-  margin: 0px;
-  text-align: center;
-  font-weight: bold;
-  vertical-align: middle;
-  background-color: white;
-}
-
-#rectangle-right {
-  width:45px;
-  height:47px;
-  position: absolute;
-  left: 588px;
+  margin-left: -45px;
+  margin-top: 0px;  
   text-align: center;
   font-weight: bold;
   background-color: #ffffff;
-  border: 100px;
+}
+
+#rectangle-near {
+  width:45px;
+  height:47px;
+  margin: 0px auto;
+  text-align: center;
+  font-weight: bold;
+  background-color: #ffffff;
 }
 
 span{
@@ -58,18 +51,16 @@ span{
 }
 
 .search-elements {
-  padding-left: 20px;
   height: 10em;
+  margin: 0px auto;
 }
 
 .search-left {
   border: 0px;
-  left:220px;
   width: 366px;
   height: 45px;
-  margin: 0px;
+  margin: 0px auto;
   outline: 0px;
-  position: absolute;
 }
 
 .search-right {
@@ -77,16 +68,12 @@ span{
   left:633px;
   width: 365px;
   height: 45px;
-  margin:0px;
   outline: 0px;
-  position: absolute;
 }
 
 .button {
   border: 0px;
   background-color: #AC1B26;
-  position: absolute;
-  left:1000px;
   font: inherit;
   height: 47px;
   width: 90.77px;
@@ -95,54 +82,52 @@ span{
   color: white;
 }
 
-.button:hover{
+.button:hover {
   background-color: #000000;
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-}
-
-.button.value:hover{
   color: #ffffff;
 }
 
-.button:hover {
+.button.value:hover {
   color: #ffffff;
 }
 
-.icon-list{
+.icon-list {
   position: absolute;
   top: 385px;
-  left: 450px;
+  left: 40px;
   padding-top: 1px;
 }
 
-.homepage-category{
+.homepage-category {
   padding: 0 12px;
   display: inline;
   margin-top: 50px;
+  text-align: center;
 }
 
-.homepage-category a{
+.homepage-category a {
   color: white;
   text-decoration: none;
   position: relative;
   letter-spacing: -0.5px;
 }
 
-.homepage-category a:hover{
+.homepage-category a:hover {
   text-decoration: underline;
 }
 
-.icon{
+.icon {
   width: 18px;
   height: 18px;
 }
 
-::placeholder{
+::placeholder {
   font-size: 15px;
 }
 
-.search-left::placeholder{
+.search-left::placeholder {
   border-width: 2px;
   line-height: 30px;
   border-right-style: solid;
@@ -152,4 +137,12 @@ span{
 .line {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+input#search.search-left {
+  font-size: 15px;
+}
+
+input#location.search-right {
+  font-size: 15px;
 }

@@ -1,7 +1,7 @@
 class Teacher < ActiveRecord::Base
 
   has_many :reviews
-  belongs_to :category, required: true
+  #belongs_to :category, required: true
   validates_presence_of :name
   validates_presence_of :postcode
 
