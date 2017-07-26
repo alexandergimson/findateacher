@@ -15,60 +15,37 @@
   text-align: center;
   font-size: 45px;
   padding-top: 60px;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
 }
 
 .search-container {
   display: table;
   margin: 0px auto;
-  margin-bottom: 40px;
-}
-
-#rectangle-find {
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  width:45px;
-  height:47px;
-  margin-left: -45px;
-  margin-top: 0px;  
-  text-align: center;
-  font-weight: bold;
-  background-color: #ffffff;
-}
-
-#rectangle-near {
-  width:45px;
-  height:47px;
-  margin: 0px auto;
-  text-align: center;
-  font-weight: bold;
-  background-color: #ffffff;
-}
-
-span{
-  vertical-align: bottom;
-  line-height: normal;
+  margin-bottom: 0px;
 }
 
 .search-elements {
-  height: 10em;
-  margin: 0px auto;
+  height: 47px;
+  margin: 0px;
 }
 
 .search-left {
   border: 0px;
   width: 366px;
   height: 45px;
-  margin: 0px auto;
   outline: 0px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  float: left;
 }
 
 .search-right {
   border: 0px;
   left:633px;
-  width: 365px;
+  width: 325px;
   height: 45px;
   outline: 0px;
+  float: left;
 }
 
 .button {
@@ -76,10 +53,11 @@ span{
   background-color: #AC1B26;
   font: inherit;
   height: 47px;
-  width: 90.77px;
+  width: 90px;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   color: white;
+  float: left;
 }
 
 .button:hover {
@@ -94,17 +72,15 @@ span{
 }
 
 .icon-list {
-  position: absolute;
-  top: 385px;
-  left: 40px;
-  padding-top: 1px;
+  display: table;
+  margin: 0px auto;
 }
 
 .homepage-category {
+  display: inline-block;
   padding: 0 12px;
-  display: inline;
-  margin-top: 50px;
-  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
 }
 
 .homepage-category a {
@@ -141,8 +117,10 @@ span{
 
 input#search.search-left {
   font-size: 15px;
+  padding-left: 10px;
 }
 
 input#location.search-right {
   font-size: 15px;
+  padding-left: 15px;
 }

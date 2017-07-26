@@ -11,10 +11,18 @@
   margin-bottom: 40px;
 }
 
+.tile-icon {
+  width:120px;
+  height:120px;
+  margin-top: 10px;
+  float: center;
+}
+
 .tile {
   display: inline-block;
   font-weight: bold;
   overflow: hidden;
+  float: left;
   height: 10em;
   width: 10em;
   margin-left: 7em;
@@ -24,24 +32,11 @@
   padding: 0.25em;
   text-align: center;
   background-color: #EEE;
-  box-shadow: 2px 2px 3px #000;
-}
-
-.tile:hover {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
 }
 
 .tile-text {
   padding-top:4.5px;
   text-decoration: none;
-}
-
-.tile-icon {
-  width:120px;
-  height:120px;
-  margin-top: 10px;
 }
 
 .small {
