@@ -1,12 +1,25 @@
-<% if @teachers.blank? %>
-  <h3>Couldn't find a teacher with your search criteria</h3>
-    <% else %>
-      <% @teachers.each do |teacher| %>
-<% if teacher.image_url.present? %>
-  <%= link_to image_tag(teacher.image_url.to_s), teacher %>
-<%else %>
-  <%= link_to image_tag("http://placehold.it/370x210"), teacher %>
-<% end %>
-<%= link_to teacher.name, teacher %>
-<% end %>
-<% end %>
+<div class="title-container">
+
+  <h1>Search Results</h1>
+  <h2>Here are you search results</h2>
+  <% if @teachers.blank? %>
+  <h1>Couldn't find a teacher with your search criteria</h1>
+  <% else %>
+
+  <div class="teachers">
+    <% @teachers.each do |teacher| %>
+    <div class="teacher">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>Name:<%= link_to teacher.name, teacher %></h3>
+          <p>Instrument:<%= link_to teacher.description, teacher %></p>
+          <p>Location:<%= link_to teacher.city, teacher %></p>
+          <p>Price per lesson:<%= link_to teacher.city, teacher %></p>
+          <p>Bio: A terrible teacher with no  passion at all. Awful. Wouldn't learn again</p>
+        </div>
+      </div>
+    </div>
+    <% end %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,72 @@
+.help {
+  background-image: url("/assets/blue-music-background.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+.srh1 {
+  text-align: center;
+  color: white;
+  font-size: 42px;
+  width: 400px;
+  margin-left: 250px;
+}
+
+.srh2 {
+  text-align: center;
+  color: white;
+  width: 400px;
+  margin-left: 210px;
+}
+
+li {
+  color: white;
+}
+
+.mb20 {
+  position: relative;
+  margin: 0px;
+  top: 125px;
+}
+
+.search-result {
+  position: relative;
+  width: 262px;
+  top: 262px;
+  left: 50px;
+}
+
+.thumbnail {
+  position: relative;
+  left: 159px;
+  background-color: yellow;
+  width: 90px;
+}
+
+.img {
+  border-radius: 4px;
+  height: 90px;
+  width: 90px;
+}
+
+.meta {
+  position: relative;
+  left: 261px;
+  bottom: 85px;
+}
+
+#myList {
+  font-size: 15px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.line {
+  width: 515px;
+  height: 2px;
+  position: relative;
+  margin: 0;
+  bottom: 40px;
+  left: 201px;
+  color: white;
+}

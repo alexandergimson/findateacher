@@ -1,18 +1,29 @@
-<nav class="fixed-nav-bar">
-  <div class="container">
-    <ul class="nav-elements left">
-        <li><a href="/">Home</a></li>
-        <li><%= link_to "About Us", about_us_path %></li>
-        <li><%= link_to "Blog", contact_us_path %></li>
-    </ul>
-    <ul class="auth-elements right">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">TEACHERFINDER</a>
+    </div>
+
+    <!-- Menu items -->
+    <div>
+      <ul class="nav navbar-nav">
+        <li><%= link_to "Home", root_path, class:"navbar-brand" %></li>
+        <li><%= link_to "About Us", about_us_path, class:"navbar-brand" %></li>
+        <li><%= link_to "Blog", contact_us_path, class:"navbar-brand" %></li>
+      </ul>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
       <% if user_signed_in? %>
         <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
         <li><%= link_to "Edit profile", edit_user_registration_path %></li>
+        <li><%= link_to "Create profile", new_teacher_path %></li>
       <% else %>
-        <li class="signup"><%= link_to "Sign up", new_user_registration_path %></li>
-        <li><%= link_to "Sign in", new_user_session_path %></li>
+        <li><%= link_to "Sign in", new_user_session_path, class:"navbar-brand" %></li>
+        <li><button id=navbtn type="button" class="btn btn-default navbar-btn"><%= link_to "Sign up", new_user_registration_path %></button></li>
       <% end %>
-      </ul>
+    </ul>
   </div>
 </nav>

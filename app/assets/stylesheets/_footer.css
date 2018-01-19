@@ -1,5 +1,6 @@
 .footer-container {
-  clear:both;
+  position: relative;
+  clear: both;
   width:100%;
   background-color: #AC1B26;
   height: 420px;

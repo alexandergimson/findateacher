@@ -1,0 +1,50 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.banerInfo {
+  width: 100%;
+  text-align: center;
+  padding-top: 160px;
+}
+
+.homeBanner {
+  min-height: 624px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  font-family: lato;
+  font-size: 46px;
+}
+
+a {
+  font-family: lato;
+}
+
+.homepage-para {
+  color: white;
+}
+
+#navbtn {
+  font-size: 18px;
+}
+
+.navbar-right {
+  margin-right: 7px;
+}
+
+.navbar-btn {
+  margin-top: 4.5px;
+}
+
+.navbar a {
+  color: black;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}

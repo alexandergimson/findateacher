@@ -1,17 +1,21 @@
-  <h3 id="teacher-header">Latest Teachers</h3>
-  <div id="center-container">
+<div class="text-center">
+  <h2>Latest Teachers</h2>
+</div>
+
+<div class="container">
+  <div class="row">
     <% @teachers.last(3).each do |teacher | %>
-      <div class="teacher-profile">
-        <img class="teacher-image"><% if teacher.image_url.present? %>
-          <%= link_to image_tag(teacher.image_url.to_s, height: 200, width: 200), teacher %>
-          <%else %>
-          <%= link_to image_tag("http://placehold.it/370x210", height: 200, width: 200), teacher %>
-          <% end %>
-        </img>
-        <hr/>
-          <h3 class="teacher-name">Name:<%= link_to teacher.name, teacher  %></h3>
-          <p class="instrument-text">Instrument:<%= link_to teacher.description, teacher %></p>
-          <p class="instrument-text">Location:<%= link_to teacher.postcode, teacher %></p>
-      </div>
-    <% end %>
+      <div class="col">
+      <img class="teacher-image"><% if teacher.image_url.present? %>
+      <%= link_to image_tag(teacher.image_url.to_s, height: 200, width: 200), teacher %>
+      <%else %>
+      <%= link_to image_tag("http://placehold.it/370x210", height: 200, width: 200), teacher %>
+      <% end %>
+    </img>
+    <h3 class="card-text">Name:<%= link_to teacher.name, teacher  %></h3>
+    <p class="card-text">Instrument:<%= link_to teacher.description, teacher %></p>
+    <p class="card-text">Location:<%= link_to teacher.postcode, teacher %></p>
+  </div>
+  <% end %>
+</div>
 </div>

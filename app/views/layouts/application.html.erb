@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Findateacher</title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <title>Findateacher</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-  <body>
-    <%= render 'layouts/navigation' %>
-    <%= yield %>
-    <%= render 'layouts/footer' %>
+<body>
+  <%= render 'layouts/navigation' %>
 
-    <% flash.each do |key, value| %>
-      <div class="alert alert-<%= key %>">
-        <a href="#" data-dismiss="alert" class="close">x</a>
-          <ul>
-            <li>
-              <%= value %>
-            </li>
-          </ul>
-      </div>
-      <% end %>
+  <%= yield %>
 
-      <script>
-        $('.stay-rating').raty({
-          path: '/assets',
-          readOnly: true,
-          score: function () {
-            return $(this).attr('data-score');
-          }
-        });
-      </script>
-  </body>
+  <% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>">
+    <a href="#" data-dismiss="alert" class="close">x</a>
+    <ul>
+      <li>
+        <%= value %>
+      </li>
+    </ul>
+  </div>
+  <% end %>
+
+  <script>
+  $('.stay-rating').raty({
+    path: '/assets',
+    readOnly: true,
+    score: function () {
+      return $(this).attr('data-score');
+    }
+  });
+  </script>
+</body>
 </html>
